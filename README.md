@@ -1,6 +1,8 @@
 # Laravel Angular Admin
 Laravel + Angularjs + Bootstrap + AdminLTE binded by Gulp workflow Admin Dashboard Boilerplate.
-Plus with social media and JWT authentication on the side.
+Plus Oauth and JWT authentication on the side.
+
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 ## Screenshots
 ![Dashboard Screenshot](https://cloud.githubusercontent.com/assets/1888261/14597104/53b404b6-057d-11e6-876d-c83630686590.png)
@@ -10,6 +12,8 @@ Plus with social media and JWT authentication on the side.
 
 ## Demo
 [Click here for a live demo](http://laravel-admin.herokuapp.com)
+
+> admin@example.com / password
 
 ---
 
@@ -33,12 +37,7 @@ $ php artisan migrate
 ```
 $ gulp && gulp watch
 $ php artisan serve
-```
-
-**Watching assets**
-
-```
-$ gulp && gulp watch
+$ open http://localhost:8000/
 ```
 
 **Angular Generators**
@@ -61,6 +60,9 @@ $ artisan ng:config name     #New config inside angular/config/
 * [Dingo/API] (https://github.com/dingo/api)
 * [Restangular] (https://github.com/mgonto/restangular)
 * [UI-Router] (https://github.com/angular-ui/ui-router/)
+* Access Control List
+    * [Romanbican/Roles] (https://github.com/romanbican/roles)
+    * [Angular ACL] (https://github.com/mikemclin/angular-acl)
 
 ## Built With
 * [Laravel] (http://laravel.com)

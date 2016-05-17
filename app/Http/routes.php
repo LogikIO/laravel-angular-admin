@@ -28,3 +28,7 @@ $api->group(['middleware' => ['api', 'api.auth']], function ($api) {
     $api->post('posts', 'PostsController@create');
 });
 
+// ADMIN ROUTES
+$api->group(['middleware' => ['api', 'api.auth', 'role:admin']], function ($api) {
+    $api->controller('users', 'UserController');
+});
